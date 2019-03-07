@@ -1,9 +1,10 @@
 require './CoffeeMenu'
+require 'artii'
 
 
 
-
-#This class is the main menu for the App.
+#This class is the title screen and main menu for the App.
+#The main menu allows the user to navigate to the functions that the app has.
 class CoffeeApp
 
 attr_accessor :choice, :choiceList
@@ -15,18 +16,23 @@ attr_accessor :choice, :choiceList
     end
 
 
+
     def mainmenu
 
 
         #Title screen
-        system('clear')
-        puts "\n\n\nWELCOME TO THE COFFEE APP\n\n\n"
+        system('clear')       
+        a = Artii::Base.new
+        puts a.asciify('WELCOME')
+        puts a.asciify('TO THE')
+        puts a.asciify('COFFEE APP')
+        puts "\n\n\n\n\n\n"
         puts "Press Enter to see the options\n\n"
         gets.chomp
 
         #Create an instance of the CoffeeMenu class, the CoffeeApp class (this class) will use this instance
-        testc = CoffeeMenu.new
-        testc.populate_menu
+        runapp = CoffeeMenu.new
+        runapp.populate_menu
 
 
         #Start a loop at the main menu
@@ -42,21 +48,21 @@ To delete an item from the coffee recipe list press '4'\n\n
 To exit the app type 'exit'\n\n"
 
 
-        #Accept user input
+        #The variable 'choice' is the user input at the main menu
         choice = gets.chomp
         choice.downcase!
                 
             if          choice == "1"
-                        testc.createCoffee
+                        runapp.createCoffee
             
                 elsif   choice == "2"               
-                        testc.readTheList
+                        runapp.readTheList
 
                 elsif   choice == "3"
-                        testc.updaterecipe
+                        runapp.updaterecipe
 
                 elsif   choice == "4"
-                        testc.deleteItem
+                        runapp.deleteItem
 
                 elsif   choice == "exit"
                         system('clear')
