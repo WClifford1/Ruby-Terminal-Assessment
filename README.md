@@ -23,14 +23,6 @@ The delete method is also looped so that the user has to enter a valid option or
 
 
 #Instruction for use
-1. To run the app run CoffeeApp.rb from the src folder.
-2. To view the slide presentation in pdf format open terminalapplicationslides.pdf from the ppt folder.
-3. To view the work flowchart and testing spreadsheet open the files in the docs folder.
-4. To view Trello screenshots open the Trello Screenshots folder from the docs folder.
-5. To view the app screenshots open the App Screenshots folder from the docs folder.
-6. To view files of brainstorming screenshots open the Brainstorm Screenshots folder.
-
-
 When the application is first started up you will be greeted with a main menu which you will be able to pick from 5 options to choose from:
 
 
@@ -58,5 +50,5 @@ If exit is chosen by typing 'exit' from the main menu the app will terminate.
 
 #Screenshots
 link to screenshots --> 
-![alt text](https://ibb.co/BGKHbvZ "Landing page")
-![alt text](https://ibb.co/z2TZmJy "main menu")
+https://ibb.co/BGKHbvZ 
+https://ibb.co/z2TZmJy 
